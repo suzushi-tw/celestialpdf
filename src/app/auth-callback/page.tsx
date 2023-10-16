@@ -7,12 +7,12 @@ import { Loader2 } from "lucide-react";
 const Page = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const origin = searchParams.get("origin");
+  const origin = searchParams.get('origin');
 
   trpc.authCallback.useQuery(undefined, {
     onSuccess: ({ success }) => {
       if (success) {
-        router.push(origin ? `/${origin}` : "/dashboard");
+        router.push(origin ? `/${origin}` : '/dashboard');
       }
     },
     onError: (err) => {

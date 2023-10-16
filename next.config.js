@@ -23,6 +23,15 @@ const nextConfig = {
       config.resolve.alias.encoding = false
       return config
     },
+    images: {
+      remotePatterns: [
+        // Add the object with the protocol and hostname here
+        {
+          protocol: "https",
+          hostname: "lh3.googleusercontent.com",
+        },
+      ],
+    },
   }
   
   module.exports = nextConfig

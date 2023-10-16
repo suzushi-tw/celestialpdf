@@ -71,7 +71,7 @@ const onUploadComplete = async ({
         },
       });
     } else {
-      const pineconeIndex = pinecone.Index('pdfninja');
+      const pineconeIndex = pinecone.Index('celestialpdf');
       const embeddings = new OpenAIEmbeddings({
         openAIApiKey: process.env.OPENAI_API_KEY,
       });

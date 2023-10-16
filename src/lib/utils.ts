@@ -7,12 +7,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function absoluteUrl(path: string) {
-  return `https://pdfninja.vercel.app${path}`
+  return `https://stellar-celestialpdf.com/${path}`
 }
 
 export function constructMetadata({
-  title = "PDF Ninja",
-  description = "PDF Ninja is an open-source software to make chatting to your PDF files easy.",
+  title = "CelestialPDF",
+  description = "Work with AI to boost your productivity",
   image = "/thumbnail.png",
   icons = "/favicon.ico",
   noIndex = false
@@ -43,7 +43,7 @@ export function constructMetadata({
       creator: "@mukul_51"
     },
     icons,
-    metadataBase: new URL('https://pdfninja.vercel.app'),
+    metadataBase: new URL('https://stellar-celestialpdf.com/'),
     themeColor: '#FFF',
     ...(noIndex && {
       robots: {
